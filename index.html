@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunwa Business Consulting Services Ltd</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <!-- Navigation / Header with Logo -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <img src="/static/assets/logo.png" alt="Kunwa Business Consulting Services Logo" class="site-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#skills">Expertise</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#contact" class="nav-btn">Request Services</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- 1. Home / Hero Section -->
     <header class="hero">
         <div class="container">
@@ -15,39 +31,97 @@
             <a href="#contact" class="btn">Request Services</a>
         </div>
     </header>
+
     <!-- 2. About Section -->
     <section id="about" class="section">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <p>Based in Douala, Cameroon, Kunwa Business Consulting Services Ltd brings deep expertise in supply chain management, adhering strictly to global CIPS (The Chartered Institute of Procurement & Supply) standards and strategic sourcing frameworks.</p>
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Based in Douala, Cameroon, Kunwa Business Consulting Services Ltd brings deep expertise in supply chain management, adhering strictly to global CIPS (The Chartered Institute of Procurement & Supply) standards and strategic sourcing frameworks[cite: 5]. Dedicated to fostering trust and excellence across African markets and beyond.</p>
+            </div>
+            <div class="profile-container">
+                <div class="profile-pic-placeholder">
+                    <span>Professional Profile Picture</span>
+                    <small>Trusted Leadership in Africa</small>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. Services Offered Section -->
-    <section id="services" class="section bg-light">
+    <!-- 3. Core Competencies & Skills Section -->
+    <section id="skills" class="section bg-light">
         <div class="container">
-            <h2>Services Offered</h2>
+            <h2>Core Competencies & Expertise</h2>
+            <p class="section-subtitle">Specialized professional skills powering our consultancy services.</p>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Business Consulting & Procurement Outsourcing</h3>
-                    <p>Streamline operations, optimize vendor management, and scale your procurement capabilities with expert guidance.</p>
+                    <h3>Procurement Contracts</h3>
+                    <p>Rigorous drafting, review, and management of commercial and international contracts to safeguard organizational interests.</p>
                 </div>
                 <div class="service-card">
-                    <h3>International Negotiations & Supplier Selection</h3>
-                    <p>Expert cross-border contract negotiation focusing heavily on Total Cost of Ownership (TCO), risk assessment, and supply chain resilience.</p>
+                    <h3>Procurement Outsourcing</h3>
+                    <p>End-to-end outsourcing solutions to streamline operations, optimize vendor relationships, and scale supply chain capabilities.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Career Development Coaching & Interview Preparation</h3>
-                    <p>Empowering supply chain professionals through MCIPS pathway guidance, tailored coaching, and rigorous interview readiness.</p>
+                    <h3>New Business Procurement</h3>
+                    <p>Strategic setup and sourcing frameworks designed for new ventures and market expansions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Transportation Procurement</h3>
+                    <p>Optimizing freight, logistics corridors, and carrier networks for cost-effective distribution.</p>
+                </div>
+                <div class="service-card">
+                    <h3>E-procurement</h3>
+                    <p>Digital transformation of purchasing workflows, vendor portals, and automated sourcing platforms.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Procurement</h3>
+                    <p>Comprehensive supply chain and purchasing management aligned with global CIPS standards.</p>
+                </div>
+                <div class="service-card">
+                    <h3>FF&E Procurement</h3>
+                    <p>Specialized sourcing and management of Furniture, Fixtures, and Equipment for corporate and hospitality projects.</p>
+                </div>
+                <div class="service-card">
+                    <h3>International Negotiations</h3>
+                    <p>Expert cross-border contract negotiation and supplier selection focusing on Total Cost of Ownership (TCO) and risk resilience.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Supply Chain Management</h3>
+                    <p>Strategic oversight of end-to-end logistics, inventory optimization, and supplier performance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. Insights / Industry Expertise Section -->
-    <section id="insights" class="section">
+    <!-- 4. Services Offered Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Services Offered</h2>
+            <p class="section-subtitle">Available remotely or on-site in Douala, Cameroon.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Career Development Coaching</h3>
+                    <p>Guidance for supply chain professionals through MCIPS pathways, tailored career coaching, and interview preparation.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Business Consulting</h3>
+                    <p>Streamline operations, optimize vendor management, and scale your procurement and supply chain capabilities.</p>
+                </div>
+                <div class="service-card">
+                    <h3>International Negotiations</h3>
+                    <p>Expert cross-border contract negotiation and supplier selection focusing on Total Cost of Ownership (TCO) and risk resilience.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Interview Preparation</h3>
+                    <p>Rigorous interview readiness coaching tailored specifically for procurement and supply chain roles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Insights / Industry Expertise Section -->
+    <section id="insights" class="section bg-light">
         <div class="container">
             <h2>Insights & Industry Expertise</h2>
             <div class="insights-grid">
@@ -59,5 +133,24 @@
         </div>
     </section>
 
+    <!-- 6. Contact / Request Services Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact / Request Services</h2>
+            <p class="contact-sub">Reach out directly to partner with our expert consultants for your upcoming projects and coaching needs (Available Remotely or in Douala, Cameroon).</p>
+            <form action="/submit" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Describe your procurement, consulting, or coaching requirements..." rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kunwa Business Consulting Services Ltd. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
