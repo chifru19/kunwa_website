@@ -149,6 +149,35 @@
         </div>
     </section>
 
+    
+    <!-- 7. Customer Reviews Section -->
+    <section id="reviews" class="section bg-light">
+        <div class="container">
+            <h2>Client Reviews & Testimonials</h2>
+            <p class="section-subtitle">Read feedback from our valued partners or leave your own review below.</p>
+
+            <div class="services-grid" style="margin-bottom: 50px;">
+                <div id="reviews-container"></div>
+            </div>
+
+            <div style="max-width: 700px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid #d4af37;">
+                <h3 style="text-align: center; margin-bottom: 20px; color: #111;">Leave a Review</h3>
+                <form action="/submit-review" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name / Company" required>
+                    <select name="rating" required style="width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                        <option value="5">5 Stars - Excellent</option>
+                        <option value="4">4 Stars - Very Good</option>
+                        <option value="3">3 Stars - Good</option>
+                        <option value="2">2 Stars - Fair</option>
+                        <option value="1">1 Star - Poor</option>
+                    </select>
+                    <textarea name="comment" placeholder="Write your review or feedback here..." rows="4" required></textarea>
+                    <button type="submit" class="btn" style="width: 100%; text-align: center;">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2026 Kunwa Business Consulting Services Ltd. All rights reserved.</p>
