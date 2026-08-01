@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunwa Business Consulting Services Ltd</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation / Header with Logo -->
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo-container">
-                <img src="/static/assets/logo.png" alt="Kunwa Business Consulting Services Logo" class="site-logo">
+                <img src="assets/logo.png" alt="Kunwa Business Consulting Services Logo" class="site-logo">
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About Us</a></li>
@@ -38,13 +38,13 @@
             <div class="about-text">
                 <h2>About Us</h2>
                 <p>Based in Douala, Cameroon, Kunwa Business Consulting Services Ltd is a premier consultancy dedicated to driving operational excellence and strategic supply chain transformation across African markets and beyond.</p>
-                <p>Led by certified experts trained through CIPS (The Chartered Institute of Procurement & Supply), we combine deep industry knowledge with rigorous global standards. Our leadership brings extensive expertise in International Negotiations, Procurement Contracts, Procurement Outsourcing, and specialized sourcing frameworks including FF&E Procurement, Transportation Procurement, and E-procurement.</p>
+                <p>Led by Managing Consultant <strong>Sophie W Tafon</strong> and certified experts trained through CIPS (The Chartered Institute of Procurement & Supply), we combine deep industry knowledge with rigorous global standards. Our leadership brings extensive expertise in International Negotiations, Procurement Contracts, Procurement Outsourcing, and specialized sourcing frameworks including FF&E Procurement, Transportation Procurement, and E-procurement.</p>
                 <p>We are committed to fostering enduring trust, mitigating cross-border risk, and delivering measurable value through Total Cost of Ownership (TCO) optimization for businesses scaling in Africa.</p>
             </div>
             <div class="profile-container">
                 <div class="profile-pic-placeholder">
-                    <span>Professional Profile Picture</span>
-                    <small>Trusted Leadership in Africa</small>
+                    <div style="text-align: center; margin: 20px 0;"><img src="assets/sophie-profile.jpg" alt="Sophie W Tafon - Managing Consultant" style="max-width: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+                    <h4 style="text-align: center; color: #333;">Trusted Leadership in Africa</h4>
                 </div>
             </div>
         </div>
@@ -118,6 +118,10 @@
                     <h3>Interview Preparation</h3>
                     <p>Rigorous interview readiness coaching tailored specifically for procurement and supply chain roles.</p>
                 </div>
+                <div class="service-card">
+                    <h3>Assessment Delivery (Professional Certification)</h3>
+                    <p>Professional assessment delivery services supporting certification standards and competency evaluations for supply chain candidates.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -140,8 +144,14 @@
         <div class="container">
             <h2>Contact / Request Services</h2>
             <p class="contact-sub">Reach out directly to partner with our expert consultants for your upcoming projects and coaching needs (Available Remotely or in Douala, Cameroon).</p>
-            <form action="/submit" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
+            <div style="margin: 20px 0; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://wa.me/237677092642" target="_blank" class="btn" style="background-color: #25d366; color: white; text-decoration: none; padding: 10px 20px; border-radius: 4px; font-weight: 600;">Chat on WhatsApp</a>
+                <a href="mailto:kunwabizcons@gmail.com" class="btn" style="background-color: #d4af37; color: white; text-decoration: none; padding: 10px 20px; border-radius: 4px; font-weight: 600;">Send Email</a>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="81ed07da-5bf9-482f-9499-02afb2c0e72d">
+                <input type="hidden" name="email_to" value="kunwabizcons@gmail.com">
+                <input type="text" name="name" autocomplete="off" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Describe your procurement, consulting, or coaching requirements..." rows="5" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
@@ -149,7 +159,6 @@
         </div>
     </section>
 
-    
     <!-- 7. Customer Reviews Section -->
     <section id="reviews" class="section bg-light">
         <div class="container">
@@ -162,8 +171,10 @@
 
             <div style="max-width: 700px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid #d4af37;">
                 <h3 style="text-align: center; margin-bottom: 20px; color: #111;">Leave a Review</h3>
-                <form action="/submit-review" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Your Name / Company" required>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="81ed07da-5bf9-482f-9499-02afb2c0e72d">
+                    <input type="hidden" name="email_to" value="kunwabizcons@gmail.com">
+                    <input type="text" name="name" autocomplete="off" placeholder="Your Name / Company" required>
                     <select name="rating" required style="width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
                         <option value="5">5 Stars - Excellent</option>
                         <option value="4">4 Stars - Very Good</option>
@@ -171,7 +182,7 @@
                         <option value="2">2 Stars - Fair</option>
                         <option value="1">1 Star - Poor</option>
                     </select>
-                    <textarea name="comment" placeholder="Write your review or feedback here..." rows="4" required></textarea>
+                    <textarea name="comment" autocomplete="off" placeholder="Write your review or feedback here..." rows="4" required></textarea>
                     <button type="submit" class="btn" style="width: 100%; text-align: center;">Submit Review</button>
                 </form>
             </div>
@@ -187,10 +198,9 @@
     <!-- Portfolio Signature Footer -->
     <section class="section bg-light" style="border-top: 1px solid #ddd; padding: 40px 0; text-align: center;">
         <div class="container">
-            <p style="font-size: 1.1rem; color: #111; font-weight: 600;">Frank Fru</p>
-            <p style="margin: 10px 0; color: #555;">Engineer & Consultant | Portfolio: <a href="https://frankfru.com" target="_blank" style="color: #d4af37; text-decoration: none;">frankfru.com</a> | GitHub: <a href="https://github.com/chifru19" target="_blank" style="color: #d4af37; text-decoration: none;">chifru19</a></p>
+            <p style="font-size: 1.1rem; color: #111; font-weight: 600;">Chi Fru</p>
+            <p style="margin: 10px 0; color: #555;">Engineer | Portfolio: <a href="https://frankfru.com" target="_blank" style="color: #d4af37; text-decoration: none;">frankfru.com</a> | GitHub: <a href="https://github.com/chifru19" target="_blank" style="color: #d4af37; text-decoration: none;">chifru19</a> | LinkedIn: <a href="https://www.linkedin.com/in/frank-fru/" target="_blank" style="color: #d4af37; text-decoration: none;">Frank Fru</a></p>
         </div>
     </section>
-
 </body>
 </html>
