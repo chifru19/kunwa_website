@@ -8,4 +8,5 @@ app = FastAPI(title="Kunwa Business Consulting Services Ltd")
 def read_index():
     return FileResponse("index.html")
 
-app.mount("/", StaticFiles(directory="."), name="static")
+# Serve all static files (CSS, images, etc.) under the /static path
+app.mount("/static", StaticFiles(directory="."), name="static")
